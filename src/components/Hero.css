@@ -1,0 +1,42 @@
+.hero-wrap { position: relative; text-align: center; padding: 90px 0 70px; z-index:1; }
+.hero-title { font-size: clamp(2.2rem, 4.5vw, 4rem); line-height:1.02; font-weight:800; margin-bottom:12px; }
+.hero-title span {
+  background: linear-gradient(90deg,var(--accent1),var(--accent2));
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  display:inline-block;
+  padding-right: 6px;
+  transform-origin: center;
+  animation: wobble 6s infinite linear;
+}
+@keyframes wobble {
+  0%{ transform: rotate(-1deg) }
+  50%{ transform: rotate(1deg) }
+  100%{ transform: rotate(-1deg) }
+}
+.hero-sub { color: var(--muted); max-width: 760px; margin: 0 auto 22px; font-weight: 400; }
+
+.hero-ctas { display:flex; gap:14px; justify-content:center; margin-top:18px; flex-wrap:wrap; }
+.btn {
+  padding: 12px 18px; border-radius: 12px; font-weight:600; display:inline-flex; gap:10px; align-items:center;
+  box-shadow: 0 6px 22px rgba(2,6,23,0.6);
+  transition: transform .22s cubic-bezier(.2,.9,.3,1), box-shadow .22s;
+}
+.btn:hover { transform: translateY(-4px) scale(1.01); }
+.btn-primary {
+  background: linear-gradient(90deg,var(--accent1),var(--accent2));
+  color: white; border: none;
+}
+.btn-ghost {
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+  color: var(--muted);
+  border: 1px solid var(--glass-border);
+}
+
+.hero-orbits { position:absolute; inset:0; pointer-events:none; z-index:0; }
+.orb { position:absolute; border-radius:50%; filter: blur(18px); opacity:0.9; transform: translate3d(0,0,0); }
+.orb--one { width:220px; height:220px; left: 6%; top: 6%; background: radial-gradient(circle, rgba(124,77,255,0.14), transparent 45%); animation: float1 8s ease-in-out infinite; }
+.orb--two { width:200px; height:200px; right: 8%; bottom: 8%; background: radial-gradient(circle, rgba(255,77,141,0.14), transparent 45%); animation: float2 9s ease-in-out infinite; }
+.orb--three { width:140px; height:140px; left: 50%; top: 20%; background: radial-gradient(circle, rgba(255,200,120,0.08), transparent 45%); animation: float3 11s ease-in-out infinite; }
+@keyframes float1 { 0% { transform: translateY(0) } 50% { transform: translateY(-18px) } 100% { transform: translateY(0) } }
+@keyframes float2 { 0% { transform: translateY(0) } 50% { transform: translateY(26px) } 100% { transform: translateY(0) } }
+@keyframes float3 { 0% { transform: translateY(0) } 50% { transform: translateY(-34px) } 100% { transform: translateY(0) } }

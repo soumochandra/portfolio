@@ -1,0 +1,63 @@
+.contact-wrap {
+  max-width: 420px;
+  margin: 48px auto;
+  padding: 32px 24px;
+  background: rgba(30, 41, 59, 0.92);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  color: #fff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.contact-wrap h2 {
+  font-size: 2rem;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+  color: #38bdf8;
+}
+
+.contact-details {
+  margin-bottom: 24px;
+  font-size: 1.08rem;
+  line-height: 1.7;
+  background: rgba(255,255,255,0.04);
+  padding: 18px 16px;
+  border-radius: 10px;
+}
+
+.contact-details strong {
+  color: #38bdf8;
+  font-weight: 600;
+}
+
+.contact-details a {
+  color: #facc15;
+  text-decoration: none;
+  word-break: break-all;
+  transition: color 0.18s;
+}
+
+.contact-details a:hover {
+  color: #38bdf8;
+  text-decoration: underline;
+}
+
+.contact-form { margin-top:18px; display:flex; flex-direction:column; gap:14px; }
+.field { position:relative; }
+.field input, .field textarea {
+  width:100%; padding:14px 14px 12px 14px; border-radius:10px;
+  border:1px solid rgba(255,255,255,0.03); background: rgba(255,255,255,0.02); color: white;
+  outline:none; font-size:0.95rem; transition: box-shadow .18s, border-color .18s;
+}
+.field input:focus, .field textarea:focus { box-shadow: 0 8px 30px rgba(2,6,23,0.6); border-color: rgba(255,255,255,0.06); }
+.field label {
+  position:absolute; left:14px; top:12px; pointer-events:none; color:var(--muted);
+  transform-origin:left top; transition: transform .18s ease, font-size .18s ease, top .18s;
+}
+.field input:focus + label,
+.field textarea:focus + label,
+.field input:not(:placeholder-shown) + label,
+.field textarea:not(:placeholder-shown) + label {
+  transform: translateY(-10px) scale(0.9);
+  top:0px; font-size:0.78rem; color:var(--muted);
+}

@@ -1,0 +1,15 @@
+.projects-grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap:20px; }
+.project-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border:1px solid var(--glass-border);
+  border-radius:14px; overflow:hidden; cursor:pointer; display:flex; flex-direction:column;
+  transform-style: preserve-3d; transition: transform .28s cubic-bezier(.2,.9,.3,1), box-shadow .28s;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.55);
+}
+.project-card:hover { transform: translateY(-8px) rotateX(2deg) rotateY(-2deg) scale(1.01); }
+.project-media { height:160px; background-size:cover; background-position:center; }
+.project-body { padding:14px 16px; display:flex; flex-direction:column; gap:8px; }
+.project-header{ display:flex; justify-content:space-between; align-items:center; }
+.project-header h3 { font-size:1.05rem; }
+.tag { background: linear-gradient(90deg,var(--accent1),var(--accent2)); padding:6px 8px; border-radius:999px; font-size:0.75rem; color:white; }
+.project-desc { color:var(--muted); font-size:0.95rem; }

@@ -1,0 +1,17 @@
+.about-grid { display:grid; grid-template-columns: 320px 1fr; gap:28px; align-items:center; }
+.about-card {
+  background: var(--card-bg);
+  border: 1px solid var(--glass-border);
+  padding: 22px; border-radius: 16px;
+  display:flex; justify-content:center; align-items:center;
+}
+.avatar-wrap { display:flex; align-items:center; justify-content:center; }
+.avatar-ring { padding: 8px; border-radius: 999px; background: linear-gradient(90deg,var(--accent1),var(--accent2)); }
+.avatar { width: 240px; height: 240px; border-radius: 50%; display:block; object-fit:cover; border: 6px solid rgba(0,0,0,0.35); transform: translateZ(0); transition: transform .28s; }
+.avatar:hover { transform: rotate(-3deg) scale(1.02); }
+
+.about-text h2 { font-size:1.8rem; margin-bottom:12px; }
+.about-text p { color: var(--muted); margin-bottom:14px; max-width: 60ch; line-height:1.6; }
+.about-list { margin:0; padding-left: 18px; color: var(--muted); }
+.about-list li { margin:8px 0; }
+@media (max-width:880px){ .about-grid{ grid-template-columns:1fr; text-align:center } .about-card{ margin-bottom:18px } }

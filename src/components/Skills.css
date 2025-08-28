@@ -1,0 +1,22 @@
+.skills-grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(120px,1fr)); gap:20px; align-items:center; }
+.skill { text-align:center; }
+.radial {
+  width:120px; height:120px; border-radius:50%; display:inline-grid; place-items:center;
+  background: conic-gradient(var(--accent1) calc(var(--pct) * 1%), rgba(255,255,255,0.06) 0%);
+  box-shadow: 0 8px 22px rgba(2,6,23,0.6), inset 0 -6px 18px rgba(0,0,0,0.25);
+  transition: transform .28s cubic-bezier(.2,.9,.3,1);
+}
+.radial:hover { transform: translateY(-8px) scale(1.03); }
+.radial-inner {
+  width:86px; height:86px; border-radius:50%; display:grid; place-items:center; background: rgba(0,0,0,0.35);
+  border: 4px solid rgba(255,255,255,0.03);
+}
+.radial-number { font-weight:700; color:#fff; font-size:1rem; }
+.skill-name { margin-top:10px; color: var(--muted); font-weight:600; }
+.skill-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
