@@ -18,7 +18,7 @@ const projects = [
     tag: "Web",
     desc: "Library Management System built with the MERN stack for efficient book tracking and user management.{NOT DEPLOYED YET} GET BACK TO YOU SOON",
     img: "/c.png",
-    link: "https://github.com/soumochandra/Library-Management-MERN.git"
+    link: "https://l-p1-1.onrender.com"
   },
   {
     id: "p3",
