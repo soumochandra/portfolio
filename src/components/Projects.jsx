@@ -8,7 +8,7 @@ const projects = [
     id: "p1",
     title: "Bitcoin Price Predictor",
     tag: "ML",
-    desc: "Forecasting Bitcoin closing prices using ML + interactive React UI.",
+    desc: "Forecasting Bitcoin closing prices using ML + interactive React UI.Built an ML model using Python and Scikit-learn for historical data analysis and price forecasting, integrated with React.js.",
     img: "/b.png",
     link: "https://myapp3-rtz5.onrender.com/"
   },
@@ -18,22 +18,30 @@ const projects = [
     tag: "Web",
     desc: "Library Management System built with the MERN stack for efficient book tracking and user management.{NOT DEPLOYED YET} GET BACK TO YOU SOON",
     img: "/c.png",
-    link: "https://l-p1-1.onrender.com"
+    link: "https://github.com/soumochandra/Library-Management-MERN.git"
   },
   {
     id: "p3",
-    title: "INTELLIGENT RESOURCE SCHEDULING IN CLOUD COMPUTING USING EVOLUTIONARY OPTIMIZATION ALGORITHMS",
-    tag: "Algorithm",
-    desc: "Still working on it.",
-    img: "/d.png",
-    link: "#"
+    title: "Employee Management System (EMS)",
+    tag: "Al-Sy",
+    desc: "Developed a full-stack React and Flask application featuring JWT authentication, automated attendance tracking, working-hour calculation, leave management, and HR dashboard.",
+    img: "/g.png",
+    link: "https://github.com/soumochandra/Employee-Attendance-Management-System.git"
   },
    {
     id: "p4",
-    title: "Gui-version-of-face-detection-on-pthon",
-    tag: "Web",
-    desc: "Python desktop app for real-time face detection with a simple GUI.",
+    title: "VisionTrack – Intelligent Face Detection System",
+    tag: "Code",
+    desc: "Developed a Python desktop application using OpenCV and GUI components for real-time face detection and visual monitoring.",
     img: "/e.png",
+    link: "https://github.com/soumochandra/Gui-version-of-face-detection-on-pthon.git"
+  },
+   {
+    id: "p4",
+    title: "🏆 SportsSync – Sports Club Management System",
+    tag: "Code",
+    desc: "SportsSync is a full-stack web application designed to streamline sports club operations through centralized athlete management, coach assignments, secure authentication, and administrative workflows.",
+    img: "/x.png",
     link: "https://github.com/soumochandra/Gui-version-of-face-detection-on-pthon.git"
   }
 
