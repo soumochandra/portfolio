@@ -1,119 +1,137 @@
-# 👁️ VisionTrack – Intelligent Face Detection System
+# 💻 Soumo Chandra | Developer Portfolio
 
-**VisionTrack** is a Python-based desktop application that uses Computer Vision and OpenCV to perform real-time face, eye, and smile detection through a webcam. It features a Tkinter GUI, voice feedback, and face image capturing for an interactive detection experience.
+A modern, responsive personal portfolio website showcasing my technical skills, software development projects, and experience in **Full-Stack Development, Artificial Intelligence, and Machine Learning**.
 
-## 🚀 Key Features
+## 🚀 Overview
 
-- **Real-Time Face Detection:** Detects multiple faces using Haar Cascade Classifiers.
-- **Eye Detection:** Identifies and highlights detected eyes.
-- **Smile Detection:** Detects smiles and provides basic expression feedback.
-- **Voice Feedback:** Uses text-to-speech to announce smile detection.
-- **Face Capture:** Captures and saves detected face images locally.
-- **Interactive GUI:** Simple desktop interface with Start, Stop, Save, and Exit controls.
-- **Multithreading:** Runs detection in a separate thread for responsive GUI interaction.
+This portfolio serves as a central platform to explore my development journey, technical expertise, projects, and professional background. It provides an interactive interface with smooth animations and organized project showcases.
+
+## ✨ Key Features
+
+- **Professional Profile:** Introduction, background, and technical expertise.
+- **Project Showcase:** Highlights of Full-Stack, AI/ML, and Python projects.
+- **Technical Skills:** Organized programming languages, frameworks, and development tools.
+- **Interactive UI:** Smooth animations and transitions using Framer Motion.
+- **Responsive Design:** Optimized browsing experience across different screen sizes.
+- **Contact & Social Links:** Easy access to professional profiles and communication channels.
 
 ## 🛠️ Technology Stack
 
 | Category | Technologies |
 |---|---|
-| Programming Language | Python |
-| Computer Vision | OpenCV |
-| GUI Development | Tkinter |
-| Detection Algorithm | Haar Cascade Classifier |
-| Voice Feedback | pyttsx3 |
-| Image Processing | OpenCV |
+| Frontend | React.js, JavaScript, HTML, CSS |
+| Animations | Framer Motion |
+| Icons | React Icons |
+| UI Development | Component-Based Architecture |
+| Package Management | npm |
+| Version Control | Git, GitHub |
+| Build Tooling | Create React App |
 
-## 🏗️ System Architecture
+## 🏗️ Application Architecture
 
-VisionTrack follows a modular desktop application architecture.
+The portfolio follows a **Component-Based Architecture**, organizing the interface into reusable React components for maintainability and scalability.
 
 ```text
-       USER INTERACTION
-              |
-              ▼
-        TKINTER GUI
-              |
-              ▼
-       WEBCAM CAPTURE
-              |
-              ▼
-      OPENCV PROCESSING
-              |
-       ┌──────┼───────┐
-       ▼      ▼       ▼
-     FACE    EYE    SMILE
-  DETECTION DETECTION DETECTION
-       |      |       |
-       └──────┼───────┘
-              |
-       ┌──────┴──────┐
-       ▼             ▼
-  VISUAL OUTPUT   VOICE FEEDBACK
-       |
-       ▼
-  SAVE FACE IMAGES
+          USER
+           |
+           ▼
+      REACT APPLICATION
+           |
+     ┌─────┼──────┐
+     ▼     ▼      ▼
+   HOME  ABOUT  SKILLS
+     |     |      |
+     └─────┼──────┘
+           ▼
+       PROJECTS
+           |
+           ▼
+      CONTACT / SOCIAL
+           |
+           ▼
+    INTERACTIVE UI
+    FRAMER MOTION
 ```
 
 ## 📂 Project Structure
 
 ```text
-VisionTrack/
+portfolio/
 │
-├── face_detect.py       # Main application logic
-├── README.md            # Project documentation
-└── .gitattributes       # Git configuration
+├── public/                 # Static assets and public files
+│
+├── src/                    # React application source
+│   ├── components/         # Reusable UI components
+│   ├── pages/              # Portfolio sections/pages
+│   ├── assets/             # Images and visual assets
+│   ├── App.js              # Main application component
+│   └── index.js            # Application entry point
+│
+├── .gitignore
+├── package.json            # Dependencies and scripts
+├── package-lock.json
+└── README.md
 ```
+
+*Note: The structure above is an illustrative organization; adjust the internal `src` folders to match your actual repository.*
 
 ## ⚙️ Installation & Setup
 
 **1. Clone the repository**
 
 ```bash
-git clone https://github.com/soumochandra/Gui-version-of-face-detection-on-pthon.git
-
-cd Gui-version-of-face-detection-on-pthon
+git clone https://github.com/soumochandra/portfolio.git
+cd portfolio
 ```
 
 **2. Install dependencies**
 
 ```bash
-pip install opencv-python pyttsx3
+npm install
 ```
 
-**3. Run the application**
+**3. Start the development server**
 
 ```bash
-python face_detect.py
+npm start
 ```
 
-**4. Allow webcam access**
+Open `http://localhost:3000` in your browser.
 
-Ensure your webcam is connected and accessible before starting detection.
+**4. Create production build**
 
-## 🧠 Core Concepts Implemented
+```bash
+npm run build
+```
 
-- Computer Vision and Real-Time Image Processing
-- Haar Cascade Object Detection
-- Facial Feature Detection
-- GUI-Based Application Development
-- Multithreading and Event Handling
-- Text-to-Speech Integration
-- Image Capture and File Handling
+## 🧩 Core Development Concepts
 
-## 🎯 Project Objectives
+- React Components and Props
+- Component-Based UI Development
+- Responsive Web Design
+- Animation and UI Interactions
+- Reusable Components
+- Frontend Optimization
+- Git-Based Version Control
 
-- Explore practical applications of Computer Vision.
-- Implement real-time facial feature detection.
-- Develop an interactive Python desktop application.
-- Integrate visual detection with voice-based feedback.
+## 🎯 Purpose
 
-## 👨‍💻 Developer
+- Showcase practical software development skills.
+- Present academic and personal projects.
+- Demonstrate frontend development capabilities.
+- Build a professional online developer presence.
+- Connect with recruiters and development communities.
+
+## 👨‍💻 About Me
 
 **Soumo Chandra**
 
-- GitHub: [@soumochandra](https://github.com/soumochandra)
-- Repository: [VisionTrack – Face Detection](https://github.com/soumochandra/Gui-version-of-face-detection-on-pthon)
+Computer Science Engineering student specializing in **Artificial Intelligence and Machine Learning**, passionate about Full-Stack Development, Machine Learning, and building practical technology solutions.
+
+- 🌐 Portfolio: https://portfolio-ns6o.onrender.com/
+- 💻 GitHub: https://github.com/soumochandra
+- 🔗 LinkedIn: https://www.linkedin.com/in/soumo-chandra-b5aa6424b
 
 ---
 
-⭐ If you find this project useful, consider giving it a star!
+⭐ If you like my work, feel free to explore my repositories and connect with me!
